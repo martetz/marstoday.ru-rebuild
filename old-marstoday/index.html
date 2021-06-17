@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="robots" content="noindex"/>
+    <meta name="description" content="Mars Today позволяет получить фотографии, сделанные марсоходами Curiousity, Opportunity и Spirit по датам. Выберите на календаре число, месяц и год, и приложение покажет лучшие снимки Марса за этот день"/>
+    <meta name="keywords" content="фотографии Марса, снимки Марса, фотографии марсоходов, curiosity фото"/>
+    <title>Mars Today. Получить фотографии марсохода по дате</title>
+    <link rel="icon" href="assets/img/mars.png" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css2?family=Play:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bad+Script&family=Underdog&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="assets\css\style.css">
+    <!--Open Graph-->
+    <meta property="og:title" content="Получить фотографии с Марса по дате. Лучшие снимки Curiosity!"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:url" content="https://marstoday.ru"/>
+    <meta property="og:image" content="assets/img/opengraph.png"/>
+    <meta property="og:description" content="Приложение позволяет выбрать на календаре дату и увидеть фотографии, сделанные марсоходами в этот день. Снимки получены с нескольких активных камер, между которыми можно переключаться и видеть наиболее полную картину, происходящего на красной планете"/>
+    <meta property="og:site_name" content="Mars Today"/>
+  </head>
+  <body>
+    <div class="block1">
+        <div class="block1__content">
+          <div class="block1__content__disc">
+          <p>Выберите дату и получите снимки красной планеты, сделанные в этот день марсоходом Curiousity</p>
+          <div class="buttons">
+            <button class="mainButton" type="button" name="button">Получить<br>фото &rarr;</button>
+          </div>
+        </div>
+        <div class="block1__content__mars"></div>
+        </div>
+    </div>
+
+    <div class="wrapper">
+
+      <div class="block2" id="block2">
+        <div class="block2__text">Ежедневные фотографии ровера-старичка Curiosity - с момента посадки на Марс и до наших дней. Просто выбирете на календаре нужное число, и наслаждайтесь снимками, сделанными с рахных камер марсохода</div>
+          <div class="block2__rover"> <img src="assets/img/rover.png" alt=""> </div>
+          <div class="block2__calendar">
+          <form class="calendar__form" method="post">
+            <div class="calendar__year"><button class="yearButtonLeft" type="button" name="button">&#9668;</button><button class="yearButtonRight" type="button" name="button">&#9658;</button></div>
+            <div class="calendar__month"> <select>
+                      <option>Январь</option>
+                      <option>Февраль</option>
+                      <option>Март</option>
+                      <option>Апрель</option>
+                      <option>Май</option>
+                      <option>Июнь</option>
+                      <option>Июль</option>
+                      <option>Август</option>
+                      <option>Сентябрь</option>
+                      <option>Октябрь</option>
+                      <option>Ноябрь</option>
+                      <option>Декабрь</option>
+                                          </select></div>
+            <div class="calendar__body">
+            <table class="calendar__days">
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+            </table>
+            </div>
+            <button class="calendar__btn" type="submit" name="button">Выбрать</button>
+          </form>
+        </div>
+        </div>
+        <div class="block3">
+
+          <div class="block3__cameras">
+            <div class="camera" id="FHAZ">Фронтальная камера</div><div class="camera" id="NAVCAM">Навигационная камера</div><div class="camera" id="RHAZ">Камера заднего вида</div><div class="camera" id="MAST">Мачтовая камера</div><div class="camera" id="MAHLI">Тепловизор</div>
+          </div>
+
+          <div class="gellery">
+            <div class="gellery__container"></div>
+            <div class="gellery__navigation">
+              <div class="gellery__btn btnMinus">&#9668;</div>
+              <div class="gellery__btn btnPlus">&#9658;</div>
+            </div>
+          </div>
+            <div class="gellery__info"><a href="#" target="_blank"><button type="button" name="button"></button></a></div>
+      </div>
+
+    <div class="footer">
+    Написать нам: <span>martetz@yandex.ru</span>
+    </div>
+  </div>
+
+  <div class="loader_bg">
+    <div class="loader"><div class="circle"></div><div class="circle"></div><div class="circle"></div></div>
+  </div>
+
+  <script type="text/javascript" src="assets\js\app.js"></script>
+
+  </body>
+  </html>
